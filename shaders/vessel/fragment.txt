@@ -1,0 +1,15 @@
+#version 330 core
+
+in vec2 fragmentTexCoord;
+in vec3 fragmentPosition;
+in vec3 fragmentNormal;
+
+uniform sampler2D imageTexture;
+
+out vec4 color;
+
+void main()
+{
+    //vec3 temp = texture(imageTexture, fragmentTexCoord).rgb;;
+    color = vec4(1.0, 0.1, 0.1, 1.0);
+}
